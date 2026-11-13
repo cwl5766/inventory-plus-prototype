@@ -51,9 +51,6 @@ rejection with and without a reason, and the audit entries.
 4. In Manager Review, change the Laptop Stand quantity from 5 to 8 and approve: value $199.92.
 5. Generate and approve a Webcam request (5 units), then generate and reject a Wireless Mouse request.
 
-`docs/capture.py` replays this scenario in a headless browser and saves the screenshots in
-`docs/screenshots/` (needs `pip install playwright` and `playwright install chromium`).
-
 ## Limits (also stated in report Section 16.7)
 
 * The "Agent" is deterministic Python. No language model is called.
@@ -66,9 +63,6 @@ rejection with and without a reason, and the audit entries.
 ```
 app.py               Streamlit screen
 inventory_core.py    business logic and SQLite access
-tests/test_core.py   automated tests
-docs/capture.py      screenshot script
-docs/screenshots/    figures 16.1 to 16.6 used in the report
+test_core.py         automated tests
 requirements.txt     dependencies
-.streamlit/config.toml  dark theme
 ```
